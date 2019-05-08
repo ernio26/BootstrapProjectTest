@@ -3,7 +3,25 @@
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="main.css">
-        <script type="text/javascript" src='main.js'></script>
+        <div class="zoom"></div>
+        <!-- add Javasscript file from js file -->
+            <script type="text/javascript" src="main.js"></script>
+        <!-- add bootstrap css file -->
+            <link rel="stylesheet" type="text/css" href="main.css">
+
+            <style>
+                    html {
+                      scroll-behavior: smooth;
+                    }
+                    
+                    #section1 {
+                      height: 600px;
+                    }
+                    
+                    #section2 {
+                      height: 600px;
+                    }
+            </style>
     </head>
 
     <body>
@@ -11,26 +29,26 @@
         <!-- navbar -->
         <div>        
             <nav class="navbar navbar-expand-lg fixed-top ">  
-                <a class="navbar-brand" href="../Bootstrap/Bootstrap.html">Home</a>
+                <a class="navbar-brand" href="#">Home</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">     
                     <ul class="navbar-nav mr-4">
                 <li class="nav-item">
-                    <a class="nav-link" data-value="about" href="#">About</a>
+                    <a class="nav-link" data-value="about" href="#section2">About</a>
                 </li>  
                 <li class="nav-item">
-                    <a class="nav-link " data-value="portfolio"href="#">Portfolio</a>    
+                    <a class="nav-link " data-value="portfolio"href="#section3">Portfolio</a>    
                 </li>
                 <li class="nav-item"> 
-                    <a class="nav-link " data-value="blog" href="#">Blog</a>
+                    <a class="nav-link " data-value="blog" href="#section4">Blog</a>
                 </li>   
                 <li class="nav-item">  
-                    <a class="nav-link " data-value="team" href="#">Team</a>
+                    <a class="nav-link " data-value="team" href="#section5">Team</a>
                 </li>  
                 <li class="nav-item"> 
-                    <a class="nav-link " data-value="contact" href="#">Contact</a>
+                    <a class="nav-link " data-value="contact" href="#section6">Contact</a>
                 </li> 
                     </ul> 
                 </div>
@@ -49,7 +67,10 @@
             </div>
         </header>
 
+        <br><br>
+
         <!-- About -->
+        <div class="main" id="section2">
         <div>
             <h1 class="text-center" style="color:orangered" >About Me</h1>
         </div>
@@ -74,12 +95,15 @@
                 </p>
             </div>
         </div>
+        </div>
 
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="main" id="section3"></div>
         <!-- portfolio -->
-        <div class="zoom"></div>
         <div class="portfolio">
-            <h1 class="text-center">Portfolio</h1>
             <div class="container">
+            <h1 class="text-center">Portfolio</h1>
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <img src="../po1.jpg" class="img-fluid zoom">
@@ -112,6 +136,8 @@
             </div>
         </div>
 
+    <div class="main" id="section4"></div>
+    <br><br>
     <!-- Posts section -->
     <div class="blog">
     <div class="container">
@@ -178,42 +204,76 @@
     </div>
     </div>
 
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="main" id="section5"></div>
     <!-- Team section -->
     <div class="team">
     <div class="container">
         <h1 class="text-center">Our Team</h1>
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-12 item">
-           <img src="../team1.jpg" class="img-fluid" alt="team">
-           <div class="des">
+           <img src="../team1.jpg" class="img-fluid">
+            <div class="des">
              Sara
             </div>
-           <span class="text-muted">Manager</span>
-          </div>
+                <center><span class="text-muted">Manager</span></center>
+            </div>
           <div class="col-lg-3 col-md-3 col-sm-12 item">
-           <img src="../team2.jpg" class="img-fluid" alt="team">
-           <div class="des">
+           <img src="../team2.jpg" class="img-fluid">
+            <div class="des">
               Jess
             </div>
-           <span class="text-muted">S.enginner</span>
-          </div>
+                <center><span class="text-muted">S.enginner</span></center>
+            </div>
           <div class="col-lg-3 col-md-3 col-sm-12 item">
-           <img src="../team1.jpg" class="img-fluid" alt="team">
-           <div class="des">
+           <img src="../team1.jpg" class="img-fluid">
+            <div class="des">
              Layla 
             </div>
-           <span class="text-muted">Front End Developer</span>
-          </div>
+                <center><span class="text-muted">Front End Developer</span></center>
+            </div>
           <div class="col-lg-3 col-md-3 col-sm-12 item">
-           <img src="../team2.jpg" class="img-fluid" alt="team">
+           <img src="../team2.jpg" class="img-fluid">
             <div class="des">
              Kassandra
             </div>
-           <span class="text-muted">Team Manger</span>
-          </div>
-         </div>
+                <center><span class="text-muted">Team Manger</span></center>
+            </div>
         </div>
-       </div>
+    </div>
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+    <div class="main" id="section6"></div>
+    <!-- Contact form -->
+    <div class="contact-form">
+        <div class="container">
+        <form>
+        <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div style="text-align: top;" >
+                <h1>Get in Touch</h1>
+            </div> 
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 right">
+            <div class="form-group">
+                <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control form-control-lg">
+                </textarea>
+            </div>
+            <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+        </div>
+        </div>
+        </form>
+        </div>
+    </div>
 
     </body>
 </html>
