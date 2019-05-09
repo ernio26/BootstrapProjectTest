@@ -11,7 +11,7 @@
 .header{
     width: 100%;
     height: 940px;
-    background-image: url('C:\\Users\Softline\Documents\test1\Images\head.png');
+    background-image: url('../Images/head.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
